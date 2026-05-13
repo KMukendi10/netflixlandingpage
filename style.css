@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    margin: 0;
+    background: black;
+}
+
+#logo {
+    width: 200px;
+}
+
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 4px 16px;
+    cursor: pointer;
+}
+
+header > * {
+    color: white;
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(./Assets/Background-Image.jpg) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+}
+
+h2 {
+    margin-top: 30vh;
+}
+
+.CTA {
+    width: unset;
+}
+
+.trending {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section h3 {
+    color: white;
+}
+
+div span {
+    -webkit-text-stroke: 1px white;
+    color: black;
+    font-weight: 900;
+    font-size: 70px;
+}
+
+div.card {
+    width: 220px;
+    height: 300px;
+    margin: 20px;
+}
+
+#show1 {
+    background: url(./Assets/N180.webp) center no-repeat;
+    background-size: cover;
+}
+
+#show2 {
+    background: url(./Assets/Apex.webp) center no-repeat;
+    background-size: cover;
+}
+
+#show3 {
+    background: url(./Assets/FatalSeduction.webp) center no-repeat;
+    background-size: cover; 
+}
+
+#show4 {
+    background: url(./Assets/BeautyInBlack.webp) center no-repeat;
+    background-size: cover;
+}
+
+#show5 {
+    background: url(./Assets/WinnieMandela.webp) center no-repeat;
+    background-size: cover;
+}
+
+#show6 {
+    background: url(./Assets/Swapped.webp) center no-repeat;
+    background-size: cover;
+}
+
+#show7 {
+    background: url(./Assets/ManOnFire.webp) center no-repeat;
+    background-size: cover;
+}
+
+#show8 {
+    background: url(./Assets/Thrash.webp) center no-repeat;
+    background-size: cover;
+}
+
+#show9 {
+    background: url(./Assets/TheCleaningLady.webp) center no-repeat;
+    background-size: cover;
+}
+
+#show10 {
+    background: url(./Assets/WarMachine.webp) center no-repeat;
+    background-size: cover;
+}
+
+main {
+    padding: 0 10vw;
+}
+
+.reasons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.reason {
+    width: 250px;
+    background: #222;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
