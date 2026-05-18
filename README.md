@@ -14,8 +14,8 @@ A responsive Netflix-inspired landing page built using HTML and CSS. This projec
 
 ## 🛠️ Built With
 
-- HTML5
-- CSS3
+- HTML
+- CSS
 
 ## 📁 Project Structure
 
