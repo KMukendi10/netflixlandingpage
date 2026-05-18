@@ -11,6 +11,7 @@ body {
     color: white;
 }
 
+/* Nav and Hero Section */
 #logo {
     width: 190px;
 }
@@ -97,10 +98,13 @@ h3 {
     margin-top: 70px;
     margin-bottom: 25px;
 }
+
+/* Main */
 main {
     padding: 0 145px;
 }
 
+/* Trending Now */
 .trending {
     position: relative;
     display: flex;
@@ -208,6 +212,8 @@ div span {
     background-size: cover;
 }
 
+
+/* Reasons */
 .reasons {
     display: flex;
     gap: 20px;
@@ -239,6 +245,7 @@ div span {
     align-self: flex-end;
 }
 
+/* Trailer */
 .tv-container {
     position: relative;
     display: flex;
@@ -254,6 +261,7 @@ div span {
     position: absolute;
 }
 
+/* Frequently Asked Questions */
 details {
     background: rgb(45, 45, 45);
     padding: 30px;
@@ -283,6 +291,7 @@ details p {
     padding-top: 10px;
 }
 
+/* Final Call to Action */
 .finalCTA {
     display: flex;
     flex-direction: column;
@@ -300,6 +309,7 @@ details p {
     height: 60px;
 }
 
+/* Footer */
 footer a {
     color: rgb(177, 176, 176);
 }
