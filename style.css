@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap');
-
 * {
     box-sizing: border-box;
-    font-family: Sans-serif;
+    
 }
 
 body {
     margin: 0;
+    font-family: 'Inter', sans-serif;
     background: black;
     color: white;
 }
@@ -28,7 +27,6 @@ button {
 
 button:hover {
     background-color: rgb(193, 17, 25);
-    transform: scale(1.03);
 }
 
 header {
@@ -39,8 +37,11 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-bottom: 2.5px solid rgb(212, 8, 8);
+
 }
 
+/* Navigation (Logo and Sign In) */
 header nav {
     display: flex;
     justify-content: space-between;
@@ -48,9 +49,11 @@ header nav {
     width: 80vw;
 }
 
+/* Hero */
 h2 {
-    font-size: 60px;
-    font-weight: bolder;
+    font-size: 55px;
+    font-weight: 900;
+    letter-spacing: -0.03em;
     margin-top: 15vh;
     text-align: center;
     margin-bottom: 10px;
@@ -62,17 +65,17 @@ h5 {
 
 p {
     font-size: 18px;
-    margin-top: 20px;
 }
 
+/* Call To Action */
 .CTA {
     width: unset;
 }
 
 .CTA input {
     font-size: 16px;
-    font-weight: bold;
-    background: transparent;
+    font-weight: 600;
+    background: rgba(31, 29, 29, 0.7);
     padding: 10px;
     width: 400px;
     height: 60px;
@@ -80,9 +83,8 @@ p {
     margin-right: 5px;
 }
 
-input:hover {
-    border: 1px solid white;
-    outline: none;
+.CTA input:hover {
+    background: rgba(54, 54, 54, 0.7);
 }
 
 .CTA button {
@@ -94,7 +96,7 @@ input:hover {
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 23px;
     margin-top: 70px;
     margin-bottom: 25px;
 }
@@ -135,21 +137,20 @@ div span {
     -webkit-text-stroke: 1px white;
     color: black;
     font-weight: 900;
-    font-size: 120px;
+    font-size: 95px;
     position: relative;
     right: 25px;
 }
 
-
+/* Scroll Arrow */
 .scroll-btn {
-    background: rgba(192, 186, 186, 0.15);
+    background: rgba(129, 125, 125, 0.6);
     position: sticky;
-    right: 0;
+    right: 3px;
     top: 50%;
     transform: translateY(-50%);
     min-width: 30px;
-    height: 100px;
-    
+    height: 100px;    
     border-radius: 8px;
     display: flex;
     justify-content: center;
@@ -162,6 +163,7 @@ div span {
     background: rgba(255,255,255,0.25);
 }
 
+/* Movies Images */
 #show1 {
     background: url(./Assets/N180.webp) center no-repeat;
     background-size: cover;
@@ -236,16 +238,17 @@ div span {
 
 .reasons-card p {
     color: rgb(177, 176, 176);
-    font-size: 18px;
+    font-size: 16px;
 }
 
+/* Icons */
 .reasons-card img {
-    width: 70px;
+    width: 73px;
     margin-top: auto;
     align-self: flex-end;
 }
 
-/* Trailer */
+/* Trailers */
 .tv-container {
     position: relative;
     display: flex;
@@ -277,7 +280,6 @@ summary {
     justify-content: space-between;
     font-size: 25px;
     font-weight: 500;
-    list-style: none;
     cursor: pointer;
 }
 
@@ -288,7 +290,9 @@ summary span {
 
 details p {
     border-top: 1px solid black;
-    padding-top: 10px;
+    padding-top: 20px;
+    margin-bottom: 0;
+    font-size: 25px;
 }
 
 /* Final Call to Action */
@@ -310,11 +314,8 @@ details p {
 }
 
 /* Footer */
-footer a {
-    color: rgb(177, 176, 176);
-}
-
 footer {
+    font-size: 14px;
     padding: 0 145px;
     color: rgb(177, 176, 176);
     display: flex;
@@ -323,6 +324,15 @@ footer {
     margin-bottom: 70px;
 }
 
+footer a {
+    color: rgb(177, 176, 176);
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* Links */
 .links {
     color: rgb(177, 176, 176);
     display: flex;
@@ -343,15 +353,35 @@ footer {
     color: white;
 }
 
+/* Language Selection */
 #languages {
-    background: rgb(8, 8, 8);
+    font-size: 16px;
+    background: rgb(20, 20, 20);
     color: white;
-    width: 100px;
+    width: 140px;
     padding: 10px;
     border-radius: 5px;
     margin-top: 30px;
 }
 
+#languages:hover {
+    background-color: rgb(37, 37, 37);
+}
+
+/* Netflix SA */
+h4 {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.disclaimer {
+    font-size: 13px;
+    color: gray;
+}
+
+
+/* Responsiveness */
 @media (max-width: 1024px) {
 
     main,
@@ -387,6 +417,7 @@ footer {
 
     header nav {
         width: 90%;
+        height: auto;
     }
 
     #logo {
@@ -458,10 +489,12 @@ footer {
     .finalCTA input,
     .finalCTA button {
         width: 100%;
+        max-width: 400px;
+        box-sizing: border-box;
     }
 
     .links {
         flex-direction: column;
         gap: 25px;
     }
-}
+    }
